@@ -84,6 +84,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/venus/proprietary/vendor/etc/camera/xiaomi/thirdpartysnapshot.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/xiaomi/thirdpartysnapshot.json \
     vendor/xiaomi/venus/proprietary/vendor/etc/elliptic_sensor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/elliptic_sensor.xml \
     vendor/xiaomi/venus/proprietary/vendor/etc/init/init.vendor.sensors.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.vendor.sensors.rc \
+    vendor/xiaomi/venus/proprietary/vendor/etc/init/ipa_fws.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ipa_fws.rc \
     vendor/xiaomi/venus/proprietary/vendor/etc/init/vendor.sensors.qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.sensors.qti.rc \
     vendor/xiaomi/venus/proprietary/vendor/etc/init/vendor.sensors.sscrpcd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.sensors.sscrpcd.rc \
     vendor/xiaomi/venus/proprietary/vendor/etc/init/vendor.xiaomi.hardware.dtool@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.xiaomi.hardware.dtool@1.0-service.rc \
@@ -257,6 +258,13 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/venus/proprietary/vendor/etc/thermal-video.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-video.conf \
     vendor/xiaomi/venus/proprietary/vendor/etc/thermald-devices.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermald-devices.conf \
     vendor/xiaomi/venus/proprietary/vendor/firmware/CAMERA_ICP.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/CAMERA_ICP.elf \
+    vendor/xiaomi/venus/proprietary/vendor/firmware/a660_gmu.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/a660_gmu.bin \
+    vendor/xiaomi/venus/proprietary/vendor/firmware/a660_sqe.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/a660_sqe.fw \
+    vendor/xiaomi/venus/proprietary/vendor/firmware/a660_zap.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/a660_zap.b00 \
+    vendor/xiaomi/venus/proprietary/vendor/firmware/a660_zap.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/a660_zap.b01 \
+    vendor/xiaomi/venus/proprietary/vendor/firmware/a660_zap.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/a660_zap.b02 \
+    vendor/xiaomi/venus/proprietary/vendor/firmware/a660_zap.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/a660_zap.elf \
+    vendor/xiaomi/venus/proprietary/vendor/firmware/a660_zap.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/a660_zap.mdt \
     vendor/xiaomi/venus/proprietary/vendor/firmware/aw8697_haptic.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8697_haptic.bin \
     vendor/xiaomi/venus/proprietary/vendor/firmware/cs35l41-dsp1-diag-revb2.wmfw:$(TARGET_COPY_OUT_VENDOR)/firmware/cs35l41-dsp1-diag-revb2.wmfw \
     vendor/xiaomi/venus/proprietary/vendor/firmware/cs35l41-dsp1-diag-z-RCV-revb2.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/cs35l41-dsp1-diag-z-RCV-revb2.bin \
@@ -271,6 +279,57 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/venus/proprietary/vendor/firmware/cs35l41-dsp1-spk-prot-revb2.wmfw:$(TARGET_COPY_OUT_VENDOR)/firmware/cs35l41-dsp1-spk-prot-revb2.wmfw \
     vendor/xiaomi/venus/proprietary/vendor/firmware/cs35l41-dsp1-spk-prot.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/cs35l41-dsp1-spk-prot.bin \
     vendor/xiaomi/venus/proprietary/vendor/firmware/cs35l41-dsp1-spk-prot.wmfw:$(TARGET_COPY_OUT_VENDOR)/firmware/cs35l41-dsp1-spk-prot.wmfw \
+    vendor/xiaomi/venus/proprietary/vendor/firmware/evass-lt.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/evass-lt.b00 \
+    vendor/xiaomi/venus/proprietary/vendor/firmware/evass-lt.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/evass-lt.b01 \
+    vendor/xiaomi/venus/proprietary/vendor/firmware/evass-lt.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/evass-lt.b02 \
+    vendor/xiaomi/venus/proprietary/vendor/firmware/evass-lt.b03:$(TARGET_COPY_OUT_VENDOR)/firmware/evass-lt.b03 \
+    vendor/xiaomi/venus/proprietary/vendor/firmware/evass-lt.b04:$(TARGET_COPY_OUT_VENDOR)/firmware/evass-lt.b04 \
+    vendor/xiaomi/venus/proprietary/vendor/firmware/evass-lt.b05:$(TARGET_COPY_OUT_VENDOR)/firmware/evass-lt.b05 \
+    vendor/xiaomi/venus/proprietary/vendor/firmware/evass-lt.b06:$(TARGET_COPY_OUT_VENDOR)/firmware/evass-lt.b06 \
+    vendor/xiaomi/venus/proprietary/vendor/firmware/evass-lt.b07:$(TARGET_COPY_OUT_VENDOR)/firmware/evass-lt.b07 \
+    vendor/xiaomi/venus/proprietary/vendor/firmware/evass-lt.b08:$(TARGET_COPY_OUT_VENDOR)/firmware/evass-lt.b08 \
+    vendor/xiaomi/venus/proprietary/vendor/firmware/evass-lt.b09:$(TARGET_COPY_OUT_VENDOR)/firmware/evass-lt.b09 \
+    vendor/xiaomi/venus/proprietary/vendor/firmware/evass-lt.b10:$(TARGET_COPY_OUT_VENDOR)/firmware/evass-lt.b10 \
+    vendor/xiaomi/venus/proprietary/vendor/firmware/evass-lt.b11:$(TARGET_COPY_OUT_VENDOR)/firmware/evass-lt.b11 \
+    vendor/xiaomi/venus/proprietary/vendor/firmware/evass-lt.b12:$(TARGET_COPY_OUT_VENDOR)/firmware/evass-lt.b12 \
+    vendor/xiaomi/venus/proprietary/vendor/firmware/evass-lt.b13:$(TARGET_COPY_OUT_VENDOR)/firmware/evass-lt.b13 \
+    vendor/xiaomi/venus/proprietary/vendor/firmware/evass-lt.b14:$(TARGET_COPY_OUT_VENDOR)/firmware/evass-lt.b14 \
+    vendor/xiaomi/venus/proprietary/vendor/firmware/evass-lt.b15:$(TARGET_COPY_OUT_VENDOR)/firmware/evass-lt.b15 \
+    vendor/xiaomi/venus/proprietary/vendor/firmware/evass-lt.b16:$(TARGET_COPY_OUT_VENDOR)/firmware/evass-lt.b16 \
+    vendor/xiaomi/venus/proprietary/vendor/firmware/evass-lt.b17:$(TARGET_COPY_OUT_VENDOR)/firmware/evass-lt.b17 \
+    vendor/xiaomi/venus/proprietary/vendor/firmware/evass-lt.b18:$(TARGET_COPY_OUT_VENDOR)/firmware/evass-lt.b18 \
+    vendor/xiaomi/venus/proprietary/vendor/firmware/evass-lt.b19:$(TARGET_COPY_OUT_VENDOR)/firmware/evass-lt.b19 \
+    vendor/xiaomi/venus/proprietary/vendor/firmware/evass-lt.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/evass-lt.mbn \
+    vendor/xiaomi/venus/proprietary/vendor/firmware/evass-lt.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/evass-lt.mdt \
+    vendor/xiaomi/venus/proprietary/vendor/firmware/evass.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.b00 \
+    vendor/xiaomi/venus/proprietary/vendor/firmware/evass.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.b01 \
+    vendor/xiaomi/venus/proprietary/vendor/firmware/evass.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.b02 \
+    vendor/xiaomi/venus/proprietary/vendor/firmware/evass.b03:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.b03 \
+    vendor/xiaomi/venus/proprietary/vendor/firmware/evass.b04:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.b04 \
+    vendor/xiaomi/venus/proprietary/vendor/firmware/evass.b05:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.b05 \
+    vendor/xiaomi/venus/proprietary/vendor/firmware/evass.b06:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.b06 \
+    vendor/xiaomi/venus/proprietary/vendor/firmware/evass.b07:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.b07 \
+    vendor/xiaomi/venus/proprietary/vendor/firmware/evass.b08:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.b08 \
+    vendor/xiaomi/venus/proprietary/vendor/firmware/evass.b09:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.b09 \
+    vendor/xiaomi/venus/proprietary/vendor/firmware/evass.b10:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.b10 \
+    vendor/xiaomi/venus/proprietary/vendor/firmware/evass.b11:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.b11 \
+    vendor/xiaomi/venus/proprietary/vendor/firmware/evass.b12:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.b12 \
+    vendor/xiaomi/venus/proprietary/vendor/firmware/evass.b13:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.b13 \
+    vendor/xiaomi/venus/proprietary/vendor/firmware/evass.b14:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.b14 \
+    vendor/xiaomi/venus/proprietary/vendor/firmware/evass.b15:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.b15 \
+    vendor/xiaomi/venus/proprietary/vendor/firmware/evass.b16:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.b16 \
+    vendor/xiaomi/venus/proprietary/vendor/firmware/evass.b17:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.b17 \
+    vendor/xiaomi/venus/proprietary/vendor/firmware/evass.b18:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.b18 \
+    vendor/xiaomi/venus/proprietary/vendor/firmware/evass.b19:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.b19 \
+    vendor/xiaomi/venus/proprietary/vendor/firmware/evass.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.mbn \
+    vendor/xiaomi/venus/proprietary/vendor/firmware/evass.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.mdt \
+    vendor/xiaomi/venus/proprietary/vendor/firmware/ipa_fws.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa_fws.b00 \
+    vendor/xiaomi/venus/proprietary/vendor/firmware/ipa_fws.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa_fws.b01 \
+    vendor/xiaomi/venus/proprietary/vendor/firmware/ipa_fws.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa_fws.b02 \
+    vendor/xiaomi/venus/proprietary/vendor/firmware/ipa_fws.b03:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa_fws.b03 \
+    vendor/xiaomi/venus/proprietary/vendor/firmware/ipa_fws.b04:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa_fws.b04 \
+    vendor/xiaomi/venus/proprietary/vendor/firmware/ipa_fws.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa_fws.elf \
+    vendor/xiaomi/venus/proprietary/vendor/firmware/ipa_fws.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa_fws.mdt \
     vendor/xiaomi/venus/proprietary/vendor/firmware/rcv_voice_delta.txt:$(TARGET_COPY_OUT_VENDOR)/firmware/rcv_voice_delta.txt \
     vendor/xiaomi/venus/proprietary/vendor/firmware/spk1_playback_delta.txt:$(TARGET_COPY_OUT_VENDOR)/firmware/spk1_playback_delta.txt \
     vendor/xiaomi/venus/proprietary/vendor/firmware/spk1_voice_delta.txt:$(TARGET_COPY_OUT_VENDOR)/firmware/spk1_voice_delta.txt \
@@ -280,11 +339,64 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/venus/proprietary/vendor/firmware/st_fts_k2_htp.ftb:$(TARGET_COPY_OUT_VENDOR)/firmware/st_fts_k2_htp.ftb \
     vendor/xiaomi/venus/proprietary/vendor/firmware/venus_bu63169_ois.coeff:$(TARGET_COPY_OUT_VENDOR)/firmware/venus_bu63169_ois.coeff \
     vendor/xiaomi/venus/proprietary/vendor/firmware/venus_bu63169_ois.prog:$(TARGET_COPY_OUT_VENDOR)/firmware/venus_bu63169_ois.prog \
+    vendor/xiaomi/venus/proprietary/vendor/firmware/vpu20_2v.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_2v.b00 \
+    vendor/xiaomi/venus/proprietary/vendor/firmware/vpu20_2v.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_2v.b01 \
+    vendor/xiaomi/venus/proprietary/vendor/firmware/vpu20_2v.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_2v.b02 \
+    vendor/xiaomi/venus/proprietary/vendor/firmware/vpu20_2v.b03:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_2v.b03 \
+    vendor/xiaomi/venus/proprietary/vendor/firmware/vpu20_2v.b04:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_2v.b04 \
+    vendor/xiaomi/venus/proprietary/vendor/firmware/vpu20_2v.b05:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_2v.b05 \
+    vendor/xiaomi/venus/proprietary/vendor/firmware/vpu20_2v.b06:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_2v.b06 \
+    vendor/xiaomi/venus/proprietary/vendor/firmware/vpu20_2v.b07:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_2v.b07 \
+    vendor/xiaomi/venus/proprietary/vendor/firmware/vpu20_2v.b08:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_2v.b08 \
+    vendor/xiaomi/venus/proprietary/vendor/firmware/vpu20_2v.b09:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_2v.b09 \
+    vendor/xiaomi/venus/proprietary/vendor/firmware/vpu20_2v.b10:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_2v.b10 \
+    vendor/xiaomi/venus/proprietary/vendor/firmware/vpu20_2v.b11:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_2v.b11 \
+    vendor/xiaomi/venus/proprietary/vendor/firmware/vpu20_2v.b12:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_2v.b12 \
+    vendor/xiaomi/venus/proprietary/vendor/firmware/vpu20_2v.b13:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_2v.b13 \
+    vendor/xiaomi/venus/proprietary/vendor/firmware/vpu20_2v.b14:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_2v.b14 \
+    vendor/xiaomi/venus/proprietary/vendor/firmware/vpu20_2v.b15:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_2v.b15 \
+    vendor/xiaomi/venus/proprietary/vendor/firmware/vpu20_2v.b16:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_2v.b16 \
+    vendor/xiaomi/venus/proprietary/vendor/firmware/vpu20_2v.b17:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_2v.b17 \
+    vendor/xiaomi/venus/proprietary/vendor/firmware/vpu20_2v.b18:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_2v.b18 \
+    vendor/xiaomi/venus/proprietary/vendor/firmware/vpu20_2v.b19:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_2v.b19 \
+    vendor/xiaomi/venus/proprietary/vendor/firmware/vpu20_2v.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_2v.mbn \
+    vendor/xiaomi/venus/proprietary/vendor/firmware/vpu20_2v.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_2v.mdt \
+    vendor/xiaomi/venus/proprietary/vendor/firmware/vpu20_2v_unsigned.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_2v_unsigned.mbn \
+    vendor/xiaomi/venus/proprietary/vendor/firmware/vpu20_4v.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_4v.b00 \
+    vendor/xiaomi/venus/proprietary/vendor/firmware/vpu20_4v.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_4v.b01 \
+    vendor/xiaomi/venus/proprietary/vendor/firmware/vpu20_4v.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_4v.b02 \
+    vendor/xiaomi/venus/proprietary/vendor/firmware/vpu20_4v.b03:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_4v.b03 \
+    vendor/xiaomi/venus/proprietary/vendor/firmware/vpu20_4v.b04:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_4v.b04 \
+    vendor/xiaomi/venus/proprietary/vendor/firmware/vpu20_4v.b05:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_4v.b05 \
+    vendor/xiaomi/venus/proprietary/vendor/firmware/vpu20_4v.b06:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_4v.b06 \
+    vendor/xiaomi/venus/proprietary/vendor/firmware/vpu20_4v.b07:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_4v.b07 \
+    vendor/xiaomi/venus/proprietary/vendor/firmware/vpu20_4v.b08:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_4v.b08 \
+    vendor/xiaomi/venus/proprietary/vendor/firmware/vpu20_4v.b09:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_4v.b09 \
+    vendor/xiaomi/venus/proprietary/vendor/firmware/vpu20_4v.b10:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_4v.b10 \
+    vendor/xiaomi/venus/proprietary/vendor/firmware/vpu20_4v.b11:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_4v.b11 \
+    vendor/xiaomi/venus/proprietary/vendor/firmware/vpu20_4v.b12:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_4v.b12 \
+    vendor/xiaomi/venus/proprietary/vendor/firmware/vpu20_4v.b13:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_4v.b13 \
+    vendor/xiaomi/venus/proprietary/vendor/firmware/vpu20_4v.b14:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_4v.b14 \
+    vendor/xiaomi/venus/proprietary/vendor/firmware/vpu20_4v.b15:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_4v.b15 \
+    vendor/xiaomi/venus/proprietary/vendor/firmware/vpu20_4v.b16:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_4v.b16 \
+    vendor/xiaomi/venus/proprietary/vendor/firmware/vpu20_4v.b17:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_4v.b17 \
+    vendor/xiaomi/venus/proprietary/vendor/firmware/vpu20_4v.b18:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_4v.b18 \
+    vendor/xiaomi/venus/proprietary/vendor/firmware/vpu20_4v.b19:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_4v.b19 \
+    vendor/xiaomi/venus/proprietary/vendor/firmware/vpu20_4v.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_4v.mbn \
+    vendor/xiaomi/venus/proprietary/vendor/firmware/vpu20_4v.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_4v.mdt \
+    vendor/xiaomi/venus/proprietary/vendor/firmware/vpu20_4v_unsigned.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_4v_unsigned.mbn \
+    vendor/xiaomi/venus/proprietary/vendor/lib/hw/audio.primary.lahaina.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/audio.primary.lahaina.so \
     vendor/xiaomi/venus/proprietary/vendor/lib/libacdb-fts.so:$(TARGET_COPY_OUT_VENDOR)/lib/libacdb-fts.so \
     vendor/xiaomi/venus/proprietary/vendor/lib/libacdbloader.so:$(TARGET_COPY_OUT_VENDOR)/lib/libacdbloader.so \
     vendor/xiaomi/venus/proprietary/vendor/lib/libacdbrtac.so:$(TARGET_COPY_OUT_VENDOR)/lib/libacdbrtac.so \
     vendor/xiaomi/venus/proprietary/vendor/lib/libadiertac.so:$(TARGET_COPY_OUT_VENDOR)/lib/libadiertac.so \
+    vendor/xiaomi/venus/proprietary/vendor/lib/libadm.so:$(TARGET_COPY_OUT_VENDOR)/lib/libadm.so \
     vendor/xiaomi/venus/proprietary/vendor/lib/libaudcal.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudcal.so \
+    vendor/xiaomi/venus/proprietary/vendor/lib/libaudio_log_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudio_log_utils.so \
+    vendor/xiaomi/venus/proprietary/vendor/lib/libaudioconfigstore.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudioconfigstore.so \
+    vendor/xiaomi/venus/proprietary/vendor/lib/libaudioparsers.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudioparsers.so \
+    vendor/xiaomi/venus/proprietary/vendor/lib/libaudioroute_ext.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudioroute_ext.so \
+    vendor/xiaomi/venus/proprietary/vendor/lib/libbatterylistener.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbatterylistener.so \
     vendor/xiaomi/venus/proprietary/vendor/lib/libcamxexternalformatutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamxexternalformatutils.so \
     vendor/xiaomi/venus/proprietary/vendor/lib/libcamxfacialfeatures.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamxfacialfeatures.so \
     vendor/xiaomi/venus/proprietary/vendor/lib/libcamxfdalgo.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamxfdalgo.so \
@@ -296,6 +408,11 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/venus/proprietary/vendor/lib/libcamxswispiqmodule.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamxswispiqmodule.so \
     vendor/xiaomi/venus/proprietary/vendor/lib/libcamxswprocessalgo.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamxswprocessalgo.so \
     vendor/xiaomi/venus/proprietary/vendor/lib/libcamxtintlessalgo.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamxtintlessalgo.so \
+    vendor/xiaomi/venus/proprietary/vendor/lib/libcomprcapture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcomprcapture.so \
+    vendor/xiaomi/venus/proprietary/vendor/lib/libexthwplugin.so:$(TARGET_COPY_OUT_VENDOR)/lib/libexthwplugin.so \
+    vendor/xiaomi/venus/proprietary/vendor/lib/libhdmiedid.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhdmiedid.so \
+    vendor/xiaomi/venus/proprietary/vendor/lib/libhdmipassthru.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhdmipassthru.so \
+    vendor/xiaomi/venus/proprietary/vendor/lib/libhfp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhfp.so \
     vendor/xiaomi/venus/proprietary/vendor/lib/libjpege.so:$(TARGET_COPY_OUT_VENDOR)/lib/libjpege.so \
     vendor/xiaomi/venus/proprietary/vendor/lib/libmctfengine_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmctfengine_stub.so \
     vendor/xiaomi/venus/proprietary/vendor/lib/libmmcamera_cac3.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_cac3.so \
@@ -303,6 +420,12 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/venus/proprietary/vendor/lib/libmmcamera_faceproc2.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_faceproc2.so \
     vendor/xiaomi/venus/proprietary/vendor/lib/libmmcamera_lscv35.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_lscv35.so \
     vendor/xiaomi/venus/proprietary/vendor/lib/libmmcamera_mfnr.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_mfnr.so \
+    vendor/xiaomi/venus/proprietary/vendor/lib/libqtigef.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqtigef.so \
+    vendor/xiaomi/venus/proprietary/vendor/lib/libresampler.so:$(TARGET_COPY_OUT_VENDOR)/lib/libresampler.so \
+    vendor/xiaomi/venus/proprietary/vendor/lib/libsndmonitor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsndmonitor.so \
+    vendor/xiaomi/venus/proprietary/vendor/lib/libspkrprot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libspkrprot.so \
+    vendor/xiaomi/venus/proprietary/vendor/lib/libssrec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libssrec.so \
+    vendor/xiaomi/venus/proprietary/vendor/lib/libvideoNS.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvideoNS.so \
     vendor/xiaomi/venus/proprietary/vendor/lib/rfsa/adsp/capi_v2_aptX_CLHDADV_Encoder.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/capi_v2_aptX_CLHDADV_Encoder.so \
     vendor/xiaomi/venus/proprietary/vendor/lib/rfsa/adsp/capi_v2_aptX_CLHDAD_Speech_Decoder.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/capi_v2_aptX_CLHDAD_Speech_Decoder.so \
     vendor/xiaomi/venus/proprietary/vendor/lib/rfsa/adsp/capi_v2_cirrus_sp.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/capi_v2_cirrus_sp.so \
